@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Api, Resource
 
 
-# import matplotlib
+import matplotlib
 # import matplotlib.pyplot as plt
 # from random import randint
 # from random import randint,shuffle
