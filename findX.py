@@ -7,6 +7,11 @@ import base64
 import requests
 import json
 
+class Q_type():
+    multichoice = "multichoice"
+    singlechoice = "singlechoice"
+    photo = "photo"
+    shortreply = "shortreply"
 
 def find_x_angel_in_qualdrilateral():
     # setting matplotlib
@@ -62,3 +67,5 @@ def find_x_angel_in_qualdrilateral():
             "q_type": Q_type.singlechoice,
             "hint": [],
             "solution": []}
+
+find_x_angel_in_qualdrilateral()
