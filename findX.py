@@ -68,4 +68,3 @@ def find_x_angel_in_qualdrilateral():
             "hint": [],
             "solution": []}
 
-find_x_angel_in_qualdrilateral()
