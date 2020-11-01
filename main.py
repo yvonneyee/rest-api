@@ -3,12 +3,12 @@ from flask_restful import Api, Resource
 
 
 import matplotlib
-# import matplotlib.pyplot as plt
-# from random import randint
-# from random import randint,shuffle
-# from io import BytesIO
-# import base64
-# import requests, json
+import matplotlib.pyplot as plt
+from random import randint
+from random import randint,shuffle
+from io import BytesIO
+import base64
+import requests, json
 
 
 
