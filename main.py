@@ -2,13 +2,13 @@ from flask import Flask
 from flask_restful import Api, Resource
 
 
-import matplotlib
-import matplotlib.pyplot as plt
-from random import randint
-from random import randint,shuffle
-from io import BytesIO
-import base64
-import requests, json
+# import matplotlib
+# import matplotlib.pyplot as plt
+# from random import randint
+# from random import randint,shuffle
+# from io import BytesIO
+# import base64
+# import requests, json
 
 
 
@@ -22,7 +22,7 @@ class Q_type():
     shortreply = "shortreply"
 
 def A_math_question():
-        return {"photo": "44", "topic": 55, "reason":"have fun2"}
+        return {"photo": "44", "topic": 55, "reason":"have fun3"}
 
 names = {"tim": {"age": 22, "gender": "male"},
          "bill": {"age": 20, "gender": "male"},
