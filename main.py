@@ -77,7 +77,7 @@ def find_x_angel_in_qualdrilateral():
           "solution":[]}
 
 def A_math_question():
-        return {"photo": "44", "topic": 55, "reason":"have fun4"}
+        return {"photo": "44", "topic": 55, "reason":"have fun5"}
 
 names = {"tim": {"age": 22, "gender": "male"},
          "bill": {"age": 20, "gender": "male"},
