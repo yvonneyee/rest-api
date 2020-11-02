@@ -10,7 +10,7 @@ from io import BytesIO
 import base64
 import requests, json
 
-from question import algebra
+from questions import algebra
 
 app = Flask(__name__)
 api = Api(app)
