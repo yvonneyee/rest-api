@@ -1,15 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource
 
-
-import matplotlib
-import matplotlib.pyplot as plt
-from random import randint
-from random import randint,shuffle
-from io import BytesIO
-import base64
-import requests, json
-
 #here you can import diffrent packages can be year or grade
 from questions import algebra
 
