@@ -10,21 +10,23 @@ from io import BytesIO
 import base64
 import requests, json
 
+#here you can import diffrent packages can be year or grade
 from questions import algebra
 
 app = Flask(__name__)
 api = Api(app)
 
 
-names = {"tim": {"age": 22, "gender": "male"},
-         "bill": {"age": 20, "gender": "male"},
-         "question": algebra.A_math_question(),
-         "q2":algebra.find_x_angel_in_qualdrilateral()
+names = {
+         "question": algebra.A_math_question,
+         "q2":algebra.find_x_angel_in_qualdrilateral,
+         "q3":algebra.simple_equation,
+         "q4":algebra.sym_equation
          }
 
 class HelloWorld(Resource):
     def get(self, name):
-        return names[name]
+        return names[name]()
 
     def post(self):
         return {"data": "Posted"}
