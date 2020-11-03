@@ -1,12 +1,16 @@
 #@title requirements
 import matplotlib
 import matplotlib.pyplot as plt 
+import random
+import inflect
+import math
+import string
 from random import randint 
 from random import randint,shuffle
+from matplotlib import patches
 from io import BytesIO
 import base64
 import requests,json
-
 
 class Q_type:
   multichoice="multichoice"
@@ -27,7 +31,6 @@ def send(info):
   r=requests.request("POST",url,headers=headers,data=json.dumps(payload))
   print(r)
   
-  import random
 def workout_Que():
 
     n1 = random.randint(0, 100)
@@ -79,7 +82,6 @@ def workout_Que():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(workout_Que())
 
-import random
 def listOutPrimes():
 
     n1 = random.choice([i for i in range(10, 101) if i % 10 == 0])
@@ -150,8 +152,6 @@ def listOutPrimes():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(listOutPrimes())
 
-import random
-import inflect
 def words_to_figures():
     p = inflect.engine()
     # a)
@@ -230,8 +230,6 @@ def words_to_figures():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(words_to_figures())
 
-import random
-import math
 def significant_figure():
 
     # a)
@@ -333,7 +331,6 @@ def significant_figure():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(significant_figure())
 
-import random
 def solve_equation():
     """
     Equation: (n - num[0]) / num[1] = num[2]
@@ -397,7 +394,6 @@ def solve_equation():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(solve_equation())
 
-import random
 def work_outAB():
 
     numA = (random.randint(-10, 15), random.randint(-10, 15))
@@ -461,7 +457,6 @@ def work_outAB():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(work_outAB())
 
-import random
 def nearest_cm():
 
     n1 = random.randint(10, 1000)
@@ -522,7 +517,6 @@ def nearest_cm():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(nearest_cm())
 
-import random
 from fractions import Fraction
 def simplest_form():
 
@@ -593,7 +587,6 @@ def simplest_form():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(simplest_form())
 
-import random, math
 def workout_2dec():
 
     n1 = random.randint(1, 10)
@@ -661,7 +654,6 @@ def workout_2dec():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(workout_2dec())
 
-import random, math
 from matplotlib import patches
 def find_Angle():
     #generate angles
@@ -711,8 +703,6 @@ def find_Angle():
     }
     question = """
     3
-
-
 
 (a) Find the value of {x}
     A. {choices1}
@@ -778,7 +768,6 @@ def find_Angle():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 find_Angle()
 
-import random, math
 from matplotlib import patches
 def cuboid_height():
 
@@ -812,12 +801,6 @@ def cuboid_height():
     }
     question = """
     11
-
-
-
-
-
-
 
     The volume of this cuboid is {volume} cm{cube}
     The width is {w}cm and the length is {l}cm.
@@ -948,7 +931,6 @@ def exchange_rate():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(exchange_rate())
 
-import random, math, string
 def simplify():
     ra1 = random.choice(string.ascii_lowercase)
     power11 = random.randint(1, 10)
@@ -1053,7 +1035,6 @@ def simplify():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(simplify())
 
-import random, math
 from matplotlib import patches
 
 def plotLines(ax, x, y, length, angle = 0):
@@ -1171,9 +1152,6 @@ def findAngle():
 
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(findAngle())
-
-import random, math
-from matplotlib import patches
 
 def plotLines(ax, x, y, length, angle = 0):
     #ax.annotate(text='123', xy=(x,y), xytext=(0,0), arrowprops=dict(arrowstyle='->'))
@@ -1578,7 +1556,6 @@ def areaOfCircle():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(areaOfCircle())
 
-import random, math
 from matplotlib import patches
 
 def plotLines(ax, x, y, length, angle = 0):
@@ -1689,7 +1666,6 @@ def trigoBearing():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(trigoBearing())
 
-import random, math
 from matplotlib import patches
 from matplotlib.ticker import (AutoMinorLocator, MultipleLocator)
 
@@ -1768,8 +1744,6 @@ def milesKmConversion():
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 send(milesKmConversion())
 
-import random, math
-
 def workout():
     #a
     n1 = random.randint(1, 10)
@@ -1834,8 +1808,6 @@ def workout():
 
     # the send command is to send to the group, just make sure the cell, first cell, has been run before
 workout()
-
-import random, math
 
 def orderOfSize():
     ls =[i*0.5 for i in range(2*0, 2*10+1) if i != 0]
