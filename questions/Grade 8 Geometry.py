@@ -209,3 +209,26 @@ def questions10():
     print('')
 
 questions10()
+
+def question11():
+
+
+  A = randint(50, 100)
+  B = randint(50, 100)  
+  C = randint(50, 100)
+
+
+  print(" Three angles of a quadrilateral are",A,",",B,",",C,". Find the measure of the fourth angle.  ")
+
+  D = 360-A-B-C
+  print("correct angle =",D,"°")
+
+  print("wrong angle =",D-1,"°")
+  print("wrong angle =",randint(50, 100),"°")
+  print("wrong angle =",randint(30, 100)-1,"°")
+
+
+for i in range(1,10):
+  print(i,".")
+  question11()
+  print("")
